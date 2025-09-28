@@ -1,0 +1,142 @@
+/* Template  */
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Split sections */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+.split.reverse {
+  flex-direction: row-reverse;
+}
+.split .text {
+  flex: 1;
+  padding: 20px;
+}
+.split .image {
+  flex: 1;
+  padding: 20px;
+}
+.split img {
+  width: 100%;
+}
+
+/* Instagram */
+.instagram {
+  text-align: center;
+  padding: 60px 20px;
+}
+.instagram .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.instagram img {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+  .instagram .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Template */
+
+.container_custom {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.logo_custom img {
+  height: 85px;
+  width: auto;
+}
+
+.menuitems_custom {
+  margin: 10px 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.hero {
+  margin: 20px 20px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.outer_custom {
+  margin: 0px 15px;
+}
+
+.menubutton_custom {
+  width: 135px;
+  height: 55px;
+  border-radius: 30px;
+  margin: 5px;
+  margin-top: 20px;
+}

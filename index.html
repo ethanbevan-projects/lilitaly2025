@@ -4,16 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lil Italy 2025</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div>
-      <img src="images/smalllogo.png" />
+    <div class="outer_custom">
+      <!-- Navbar -->
+      <nav
+        class="container_custom d-flex justify-content-between align-items-center py-3"
+      >
+        <div class="logo_custom">
+          <img src="images/smalllogo.png" alt="Lil Italy Logo" />
+        </div>
+
+        <!-- <div class="d-flex">
+          <p class="fs-4 menuitems_custom px-3">Home</p>
+          <p class="fs-4 menuitems_custom px-3">About</p>
+          <p class="fs-4 menuitems_custom px-3">Contact</p>
+        </div> -->
+
+        <div class="">
+          <button class="btn btn-danger menubutton_custom">Explore</button>
+          <button class="btn btn-danger menubutton_custom">Book</button>
+          <button class="btn btn-danger menubutton_custom">Contact</button>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <div class="hero">
+        <img src="https://placehold.co/1200x700" alt="Hero" class="w-100" />
+      </div>
     </div>
-    <div>
-      <button>Explore</button>
-    </div>
-    <div>
-      <button>Book Now</button>
-    </div>
+
+    <!-- About -->
+    <section class="split">
+      <div class="text">
+        <h2>Our Story</h2>
+        <p>
+          We are a family-run Italian restaurant serving handmade pasta,
+          wood-fired pizza, and fine wines from Italy.
+        </p>
+      </div>
+      <div class="image"><img src="https://placehold.co/600x400" /></div>
+    </section>
+
+    <!-- Food Truck -->
+    <section class="split reverse">
+      <div class="image"><img src="https://placehold.co/600x400" /></div>
+      <div class="text">
+        <h2>Our Food Truck</h2>
+        <p>
+          Catch us around the city! Bringing Italian street food to festivals
+          and private events.
+        </p>
+      </div>
+    </section>
+
+    <!-- Farms -->
+    <section class="split">
+      <div class="text">
+        <h2>Farms & Friends</h2>
+        <p>
+          We partner with local farms for organic produce and sustainable meats.
+          Community and freshness first.
+        </p>
+      </div>
+      <div class="image"><img src="https://placehold.co/600x400" /></div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram">
+      <h2>Follow Us</h2>
+      <div class="grid">
+        <img src="https://placehold.co/300x300" />
+        <img src="https://placehold.co/300x300" />
+        <img src="https://placehold.co/300x300" />
+        <img src="https://placehold.co/300x300" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Lil Italy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
