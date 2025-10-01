@@ -1009,7 +1009,8 @@ a:active {
 @media (max-height: 650px) {
   .hero-text h1 {
     font-size: 5vw;
-    line-height: 38px;
+    line-height: 10vh;
+    /* font-size: clamp(16px, 5vw, 48px); */
   }
   .hero-text p {
     font-size: 12px;
