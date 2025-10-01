@@ -1006,9 +1006,15 @@ a:active {
   }
 }
 
+@media (max-width: 850px) {
+  .hero-text h1 {
+    font-size: 4.8vw;
+  }
+}
+
 @media (max-height: 650px) {
   .hero-text h1 {
-    font-size: 5vw;
+    font-size: 4.8vw;
     line-height: 10vh;
     /* font-size: clamp(16px, 5vw, 48px); */
   }
@@ -1017,9 +1023,10 @@ a:active {
   }
 }
 
-@media (max-height: 450px) {
+@media (max-height: 520px) {
   .hero-text h1 {
-    font-size: 2vw;
+    font-size: 4vw;
+    line-height: 14vh;
     padding: 30px 0px;
   }
   .hero-text p {
