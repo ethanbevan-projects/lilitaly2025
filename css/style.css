@@ -138,7 +138,7 @@ p {
 
 .outer_custom {
   margin: 0px 15px;
-  height: 120px;
+  height: 125px;
 }
 
 .menubutton_custom {
@@ -162,7 +162,7 @@ p {
 /* Hero Split */
 .hero-split {
   display: flex;
-  flex-wrap: wrap;
+
   height: 81vh;
 }
 
@@ -230,16 +230,6 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-split {
-    flex-direction: column;
-  }
-  .hero-text {
-    padding: 40px;
-  }
 }
 
 /* Rounded title and image  */
@@ -372,10 +362,6 @@ p {
 }
 
 /* Animation */
-* {
-  opacity: 0;
-  animation: fadeIn 0.8s ease forwards;
-}
 
 @keyframes fadeIn {
   to {
@@ -473,9 +459,11 @@ h2 {
 .hero-text:hover,
 .btn:hover,
 .logo_custom:hover,
-h2:hover {
+h2:hover,
+h1:hover,
+p:hover {
   transform: scale(1.01);
-  color: rgb(255, 213, 213);
+  color: #fff3e7;
 }
 
 .menuitems_custom {
@@ -488,7 +476,8 @@ h2:hover {
 }
 
 .menuitems_custom:hover,
-h2:hover {
+h2:hover,
+p:hover {
   transform: translateY(-3px);
   color: rgb(153, 2, 2);
 }
@@ -556,7 +545,7 @@ h2:hover {
 .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -570,7 +559,7 @@ h2:hover {
 
 .feature-card img {
   width: 100%;
-  height: 350px; /* set a fixed height */
+  height: 200px; /* set a fixed height */
   object-fit: cover; /* crops instead of stretching */
   border-radius: 15px;
   border-radius: 15px;
@@ -581,7 +570,7 @@ h2:hover {
 }
 
 .feature-card img:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -608,7 +597,7 @@ h2:hover {
 
 .container_custom_concept p {
   text-align: left;
-  width: 300px;
+  width: 400px;
   padding: 0px;
   margin: 0px;
 }
@@ -709,6 +698,10 @@ h2:hover {
   overflow: hidden;
 }
 
+.info-card h2 {
+  margin-bottom: 20px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -744,7 +737,7 @@ a:active {
 
 .find_us {
   margin-bottom: 10px;
-  padding: 25px 0px 0px 0px;
+  padding: 0px 0px 10px 0px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -765,7 +758,7 @@ a:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin: 40px 0;
+  margin: 20px 0px 50px 0px;
 }
 
 .review-card {
@@ -908,7 +901,7 @@ a:active {
 
 .feature-card-border {
   border: 2px solid darkred;
-  padding: 18px;
+  padding: 20px;
   border-radius: 20px;
 }
 
@@ -921,7 +914,6 @@ a:active {
 }
 
 .feature-card-border:hover {
-  border: 2px solid #7e1000; /* your deep red */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -946,7 +938,17 @@ a:active {
 .instagram_follow {
   width: 35%;
 }
+
+.menu_full_background {
+  margin-right: 20px;
+}
+
 /* Mobile */
+.scroll_nav,
+.button_and_menuitems {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
 
 @media (max-height: 800px) {
   .hero-split {
@@ -1002,13 +1004,6 @@ a:active {
   .hero-text {
     padding: 50px;
   }
-  .extra_button {
-    display: none;
-  }
-  .explore_button {
-    background-color: #7e1000;
-    color: #ffffff;
-  }
 }
 
 @media (max-height: 650px) {
@@ -1048,4 +1043,255 @@ button:focus,
 button:active {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.text_align_right_custom {
+  text-align: right !important;
+  width: 400px;
+}
+
+.text_align_left_custom {
+  text-align: left !important;
+  width: 500px;
+}
+
+.feature-card-border {
+  border: 0px solid darkred;
+  padding: 20px !important;
+  border-radius: 20px;
+  margin: 5px;
+  background: #fef3e7;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.feature-card-border:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.hide_menu {
+  display: none;
+}
+
+.show_menu {
+  display: block;
+  list-style-type: none;
+  background: #fff3e7;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Mitr", sans-serif;
+  color: #8f0000;
+  z-index: 1;
+  position: fixed;
+}
+
+.click_button {
+  position: fixed;
+  z-index: 999;
+}
+
+.click_button i {
+  color: rgb(95, 0, 0);
+}
+
+.buttons_concept_container {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.click_button {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .extra_button {
+    display: none;
+  }
+  .explore_button {
+    background-color: #7e1000;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 999px) {
+  .feature-card_3rdImage {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .click_button {
+    display: block;
+  }
+  .hero-split {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .hero-img {
+    width: 100% !important;
+    padding: 38px 35px 10px 35px;
+  }
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .hero-text {
+    padding: 40px 40px 40px 40px;
+  }
+
+  .features-section {
+    padding: 0px;
+  }
+
+  .feature-card-border {
+    padding: 10px;
+  }
+
+  .features-grid {
+    margin-top: 0px !important;
+    padding: 30px;
+  }
+  .container_custom_seating {
+    padding: 30px;
+  }
+
+  .container_custom_concept p,
+  .features-section h2 {
+    width: 250px;
+  }
+
+  .calendly-inline-widget {
+    margin: 20px 0px -100px 0px;
+  }
+  .button_and_menuitems {
+    display: none !important;
+  }
+  .logo_custom img {
+    height: 68px;
+    width: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container_custom_concept {
+    flex-direction: column-reverse;
+  }
+
+  .features_section_reviews_reverse {
+    flex-direction: column;
+  }
+
+  flex-direction: column;
+  .features-section {
+    padding: 0px;
+    margin: 0px;
+  }
+  .container_custom_concept p,
+  .features-section h2 {
+    width: 250px;
+    width: 80%;
+  }
+  .buttons_concept_container {
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .container_custom_gallery {
+    margin: 50px 0px 0px 0px;
+  }
+
+  .instagram .grid {
+    padding: 0px 20px;
+  }
+
+  .info-grid-maps {
+    padding: 30px;
+  }
+
+  .hero-split {
+    margin: 0px 35px 0px 0px;
+  }
+
+  .btn-custom {
+    width: 65%;
+  }
+
+  .features_section_reviews {
+    padding: 50px 20px;
+  }
+  .footer_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .footer_logo img {
+    height: 60px;
+    margin: 30px 0px 35px 0px;
+  }
+  .calendly-mobile {
+    min-width: 100%;
+  }
+
+  .hero-section {
+    margin: 30px 30px;
+  }
+
+  .features-section {
+    margin: 30px 5px;
+  }
+
+  .features-grid-concept {
+    padding: 15px 25px 30px 25px;
+  }
+
+  .features_section_seating {
+    margin: 30px;
+  }
+
+  .calendly-inline-widget {
+    margin: 20px 0px -150px 0px;
+  }
+
+  .outer_custom {
+    height: 110px;
+  }
+
+  .hero-section h2 {
+    font-size: 32px;
+  }
+  .hero-section-favourite {
+    padding: 40px 20px;
+  }
+  .container_custom_seating {
+    padding: 20px;
+  }
+
+  .show_menu li {
+    font-size: 32px;
+    padding: 30px;
+  }
+
+  .info-card {
+    padding: 50px;
+  }
 }
