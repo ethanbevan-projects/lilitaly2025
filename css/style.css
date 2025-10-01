@@ -1314,7 +1314,8 @@ button:active {
   .hero-section h2,
   h2,
   .feature-card h3,
-  p {
+  p,
+  .hero-text h1 {
     text-align: center !important;
     width: 100%;
   }
@@ -1357,4 +1358,11 @@ button:active {
   .hero-img-regular {
     display: none;
   } */
+}
+
+@media (max-width: 768px) {
+  .feature-card-border:hover {
+    box-shadow: none !important;
+    transform: none !important;
+  }
 }
