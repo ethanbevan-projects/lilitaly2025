@@ -2,6 +2,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+.page-wrapper {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
 /* Base */
 * {
   margin: 0;
@@ -990,7 +996,7 @@ a:active {
 
 @media (max-width: 1250px) {
   .btn-custom {
-    width: 60%;
+    width: 45%;
   }
 
   .instagram_follow {
@@ -1112,8 +1118,9 @@ button:active {
 
 .buttons_concept_container {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .click_button {
@@ -1124,7 +1131,7 @@ button:active {
   display: none;
 } */
 
-@media (max-width: 1100px) {
+@media (max-width: 1060px) {
   .extra_button {
     display: none;
   }
@@ -1245,7 +1252,7 @@ button:active {
   }
 
   .btn-custom {
-    width: 65%;
+    width: 42%;
   }
 
   .features_section_reviews {
@@ -1365,4 +1372,14 @@ button:active {
     box-shadow: none !important;
     transform: none !important;
   }
+}
+
+.coming_soon_banner {
+  text-align: center;
+  height: 90vh !important;
+  margin: 40px 0px;
+  width: 100% !important;
+}
+
+.coming_soon_block {
 }
