@@ -346,7 +346,11 @@ p {
   font-size: 40px;
   font-weight: 600;
   color: #8f0000;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+}
+
+.hero-section-remix h2 {
+  margin-bottom: 0px !important;
 }
 
 .hero-section p {
@@ -1389,24 +1393,14 @@ button:active {
 }
 
 @media (max-width: 600px) {
-  .outer_custom {
-    margin: 0px;
-  }
-  .hero-img {
-    width: 100% !important;
-    padding: 0px !important;
-    margin-bottom: 35px;
-    border-radius: 0px !important;
-  }
-
-  .hero_rounded_mobile {
-    border-radius: 0px !important;
-  }
-
   .splide__track {
     overflow: hidden;
     position: relative;
     z-index: 0;
-    height: 600px;
+    height: 500px;
+  }
+
+  .btn {
+    margin-top: 20px;
   }
 }
