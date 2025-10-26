@@ -1407,6 +1407,6 @@ button:active {
     overflow: hidden;
     position: relative;
     z-index: 0;
-    height: 500px;
+    height: 400px;
   }
 }
