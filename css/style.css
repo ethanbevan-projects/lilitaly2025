@@ -346,7 +346,7 @@ p {
   font-size: 40px;
   font-weight: 600;
   color: #8f0000;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .hero-section p {
@@ -1407,6 +1407,6 @@ button:active {
     overflow: hidden;
     position: relative;
     z-index: 0;
-    height: 400px;
+    height: 600px;
   }
 }
